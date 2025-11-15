@@ -51,7 +51,7 @@ Each contributor-specific folder holds their respective notebooks and scripts. T
 
 - **PLGaultier/model.ipynb** – A FastAI implementation that fine-tunes a ResNet-34 backbone and exports the trained learner for reuse.
 - **bhavya1600/Chest_Pneumonia_Classification.ipynb** – A TensorFlow/Keras workflow with custom CNN architecture, data augmentation, and confusion-matrix reporting.
-- **nikoneri/CHEST-X-RAY_PNEUMONIA_CLASSIFICATION.ipynb** – An EfficientNetB0 transfer-learning pipeline with staged fine-tuning and test-set evaluation.
+- **nikoneri/CHEST-X-RAY_PNEUMONIA_CLASSIFICATION.ipynb** – An EfficientNetB3 transfer-learning pipeline with staged fine-tuning and test-set evaluation.
 
 ## Data 📁
 The project uses chest X-ray images from publicly available datasets. These images are processed and labeled into two classes: NORMAL and PNEUMONIA.
