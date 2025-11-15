@@ -17,6 +17,42 @@ This project utilizes the EfficientNet model for automated diagnosis of pneumoni
 2. Install TensorFlow and other required libraries listed in `requirements.txt`.
 3. Prepare the dataset, following the preprocessing steps outlined in the code.
 
+## Repository Structure 📂
+
+```
+classification_DL_pneumo/
+├── data/
+│   └── chest_xray/
+│       ├── train/
+│       │   ├── NORMAL/
+│       │   └── PNEUMONIA/
+│       ├── val/
+│       │   ├── NORMAL/
+│       │   └── PNEUMONIA/
+│       └── test/
+│           ├── NORMAL/
+│           └── PNEUMONIA/
+├── PLGaultier/
+│   └── model.ipynb (PyTorch/FastAI)
+├── MJAHMADEE/
+│   ├── MainCode_Approach1.ipynb
+│   ├── MainCode_Approach2.ipynb
+│   ├── MainCode_Approach1.py
+│   └── MainCode_Approach2.py
+├── bhavya1600/
+│   └── Chest_Pneumonia_Classification.ipynb
+└── nikoneri/
+    └── CHEST_X-RAY_PNEUMONIA_CLASSIFICATION.ipynb
+```
+
+Each contributor-specific folder holds their respective notebooks and scripts. The `data` directory is pre-populated with the folder structure expected by the notebooks; populate the `train`, `val`, and `test` splits before running experiments.
+
+### Contributor Notebooks
+
+- **PLGaultier/model.ipynb** – A FastAI implementation that fine-tunes a ResNet-34 backbone and exports the trained learner for reuse.
+- **bhavya1600/Chest_Pneumonia_Classification.ipynb** – A TensorFlow/Keras workflow with custom CNN architecture, data augmentation, and confusion-matrix reporting.
+- **nikoneri/CHEST-X-RAY_PNEUMONIA_CLASSIFICATION.ipynb** – An EfficientNetB0 transfer-learning pipeline with staged fine-tuning and test-set evaluation.
+
 ## Data 📁
 The project uses chest X-ray images from publicly available datasets. These images are processed and labeled into two classes: NORMAL and PNEUMONIA.
 
